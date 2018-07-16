@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+h1{
+   color:red;
+   font-family: Georgia;   
+   font-size: 30px;
+}
+
+h2, h3{
+   color:black;
+   font-size: 26px;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    text-align: center;
+    font-family: Helvetica; 
+}
+
+.tablink {
+    background-color: #555;
+    color: white;
+    float: left; <!-- For picture alignment -->
+    border: none; <!-- Define border width -->
+    outline: none; <!-- Used for tabbing around the page with keyboard only users -->
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 20px;
+    width: 25%;
+}
+
+.tablink:hover {
+    background-color: #777;
+}
+
+.tabcontent {
+    color: white;
+    display: none;
+    padding: 50px;
+    text-align: center;
+}
+
+img {
+   image-orientation: from-image; <!––This is for the orientation of the image to make sure it's the right way––> 
+}
+
+#Info {background-color;}
+#Coding {background-color;}
+#Writing {background-color;}
+#Hobbies {background-color;}
+
+</style>
+</head>
+
+<body style = "background:url(https://wallpaper-house.com/data/out/9/wallpaper2you_339109.jpg); background-size; 100% 100%;"><!––https://wallpaper-house.com/group/download-background-wallpaper/index.php is the website i used for the image––>
+
+   <h1>Jeremy Lau, Video Game Designer and Programmer</h1>
+
+   <button class="tablink" onclick="openTab('Info', this)" id="defaultOpen">About Me</button>
+   <button class="tablink" onclick="openTab('Coding', this,)">Coding Works</button>
+   <button class="tablink" onclick="openTab('Writing', this,)">Creative Writing</button>
+   <button class="tablink" onclick="openTab('Hobbies', this,)">Hobbies</button>
+
+   <div id="Info" class="tabcontent">
+         <h2>This website is for showing my various works in and outside of University.</h2>
+         <P>But first some personal information about me.<br>This is me!</p>
+         <img src="ProfilePicture.jpg" alt="My picture" style="width:700px;height:500px;"> <!--This is a picture from my computer as I don't have one online-->
+         <p>I am a computer science graduate from the University of Calgary.<br>My passion is and will always be video games, both playing and making them. <br>My favourite genre of games are adventure, rpg in particular jrpgs such as the Tales of series.</p>
+         <p>My email and main way to get a hold of me is jeremyyklau@gmail.com</p>
+         <p>My github with projects and their code. <br><a href="https://github.com/jeremyYKlau">https://github.com/jeremyYKlau</a></p>
+         <p>My linkedin profile. <br><a href="https://www.linkedin.com/in/jeremy-lau-a187b3122/">https://www.linkedin.com/in/jeremy-lau-a187b3122/.</a></p> 
+         <P>My twitter although I haven't actually used it except for staying connected to people I met at GDC<br><a href="https://twitter.com/JeremyYkLau">https://twitter.com/JeremyYkLau</a></p>
+      
+   </div>
+
+   <div id="Coding" class="tabcontent">
+      <h3>Coding</h3>
+      <p>WIP.</p> 
+   </div>
+
+   <div id="Writing" class="tabcontent">
+      <h3>Writing</h3>
+      <p>I write a lot of stories in my free time. While I don't have them public I do have 1 part of one of my longer pieces on my google docs at the following link</p>
+      <p>A Hero's End, working title. It's a fantasy story in a medieval/fantasy setting.<br><a href="https://docs.google.com/document/d/1ii0FeDzRxPPnSZZLSuVKscYKKJpBxG6u13b40crdRRk/edit?usp=sharing">https://docs.google.com/document/d/1ii0FeDzRxPPnSZZLSuVKscYKKJpBxG6u13b40crdRRk/edit?usp=sharing</a></p> 
+      <p>I've written other works and have outlines of other story ideas, not all fantasy but for now this one story is my current project and my favorite piece.<br>If you wish to see more contact me at my email address listed on the info page.</p>
+   </div>
+   
+   <div id="Hobbies" class="tabcontent">
+      <h3>Hobbies</h3>
+      <p>WIP</p>
+   </div>
+
+   <script>
+   function openTab(tabName,elmnt,color) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+         tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < tablinks.length; i++) {
+      }
+      document.getElementById(tabName).style.display = "block";
+   }
+   document.getElementById("defaultOpen").click();
+   </script>
+        
+</body>
+</html> 
